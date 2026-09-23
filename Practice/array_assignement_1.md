@@ -35,7 +35,7 @@ for i in range(1,len(array)):
     largest_num = arr[i]
 
 print(largest_num)
-
+```
 ---
 
 ## 2. Find the Minimum Element
@@ -47,6 +47,25 @@ arr = [12, 45, 7, 89, 34, 67]
 
 # Output:
 # 7
+```
+```python
+arr = [12, 45, 7, 89, 34, 67]
+smallest_num = arr[0]
+for x in arr:
+  if x < smallest_num:
+    smallest_num = x
+
+print(smallest_num)
+```
+
+```python
+arr = [12, 45, 7, 89, 34, 67]
+smallest_num = arr[0]
+for i in range(1,len(arr)):
+  if arr[i] < smallest_num:
+    smallest_num = arr[i]
+
+print(smallest_num)
 ```
 
 ---
