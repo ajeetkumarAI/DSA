@@ -247,7 +247,26 @@ target = 70
 # Output:
 # 3
 ```
+```python
+arr = [10, 30, 50, 70, 90]
+target = 70
 
+for i in range(len(arr)):
+  if arr[i] == target:
+    return i
+return -1
+```
+
+```python
+arr = [10, 30, 50, 70, 90]
+target = 70
+def find_index(arr,target):
+  for i in range(len(arr)):
+  if arr[i] == target:
+    return i
+  return -1
+find_index(arr,target)
+```
 ---
 
 ## 9. Reverse an Array In-Place
@@ -259,6 +278,16 @@ arr = [10, 20, 30, 40, 50]
 
 # Output:
 # [50, 40, 30, 20, 10]
+```
+```python
+arr = [10, 20, 30, 40, 50]
+left = 0
+right = len(arr)-1
+while left < right:
+  arr[left],arr[right] = arr[right],arr[left]
+  start += 1
+  end  -= 1
+print("reversed arr",arr)
 ```
 
 ### Requirement
