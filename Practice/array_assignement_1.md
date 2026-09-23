@@ -153,6 +153,23 @@ arr = [10, 20, 30, 40, 50]
 # 30
 ```
 
+```python
+arr = [10, 20, 30, 40, 50]
+total = 0
+for num in arr:
+  total += num
+avg = total/ len(arr)
+print(avg)
+```
+
+```pyhton
+arr = [10, 20, 30, 40, 50]
+total = 0
+for i in in range(0,len(arr)):
+  total += arr[i]
+avg = total / len(arr)
+print(avg)
+```
 ---
 
 ## 6. Count Even Numbers
@@ -164,6 +181,23 @@ arr = [10, 15, 22, 33, 40, 51]
 
 # Output:
 # 3
+```
+
+```python
+arr = [10, 15, 22, 33, 40, 51]
+cnt = 0
+for x in arr:
+  if x % 2 == 0:
+    cnt += 1
+print(cnt)
+```
+```python
+arr = [10, 15, 22, 33, 40, 51]
+cnt = 0
+for i in range(len(arr)):
+  if arr[i] % 2 == 0:
+    cnt += 1
+print(cnt)
 ```
 
 ---
@@ -179,6 +213,24 @@ arr = [-5, 10, 0, -3, 8, 0, 7]
 # Negative: 2
 # Zero: 2
 ```
+```python
+arr = [-5, 10, 0, -3, 8, 0, 7]
+pos_value_cnt = 0
+negative_value_cnt = 0
+zero_value_cnt = 0
+for x in arr:
+  if x < 0:
+    negative_value_cnt += 1
+  elif x == 0:
+    zero_value_cnt += 1
+  else:
+    pos_value_cnt += 1
+
+print("Positive Value Count", pos_value_cnt)
+print("Negative Value Count", negative_value_cnt)
+print("Zero Value Count", zero_value_cnt)
+```
+    
 
 ---
 
