@@ -20,6 +20,7 @@ arr = [12, 45, 7, 89, 34, 67]
 ```
 
 ```python
+arr = [12, 45, 7, 89, 34, 67]
 largest_num = arr[0]
 for num in arr:
   if num > largest_num:
@@ -29,6 +30,7 @@ print(largest_num)
 ```
 
 ```python
+arr = [12, 45, 7, 89, 34, 67]
 largest_num = arr[0]
 for i in range(1,len(array)):
   if arr[i] > largest_num:
@@ -79,6 +81,33 @@ arr = [20, 5, 40, 10, 80, 15]
 
 # Maximum: 80
 # Minimum: 5
+```
+
+```python
+arr = [20, 5, 40, 10, 80, 15]
+max_value = arr[0]
+min_value = arr[0]
+for x in arr:
+  if x > max_value:
+    max_value = x
+  if x < min_value:
+    min_value = x
+
+print(max_value)
+print(max_value)
+```
+```python
+arr = [20, 5, 40, 10, 80, 15]
+max_value = arr[0]
+min_value = arr[0]
+for i in range(1,len(arr)):
+  if arr[i] > max_value:
+    max_value = arr[i]
+  if arr[i] < min_value:
+    min_value = arr[i]
+
+print(max_value)
+print(max_value)
 ```
 
 ---
