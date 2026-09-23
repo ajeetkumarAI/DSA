@@ -382,6 +382,23 @@ arr = [20, 5, 10, 40, 15]
 
 Do not use sorting.
 
+```python
+arr = [20, 5, 10, 40, 15]
+smallest_num = float("inf")
+second_smallest_num = float("inf")
+
+for num in arr:
+    if num < smallest_num:
+        second_smallest_num = smallest_num
+        smallest_num = num
+    elif num < second_smallest_num and num != smallest_num:
+        second_smallest_num = num
+
+print("Second Smallest Number:", second_smallest_num)  # Output: 10
+
+```
+
+
 ---
 
 ## 13. Move All Zeros to the End In-Place
