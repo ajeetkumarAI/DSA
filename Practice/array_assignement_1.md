@@ -122,6 +122,23 @@ arr = [10, 20, 30, 40]
 # Output:
 # 100
 ```
+```python
+arr = [10, 20, 30, 40]
+total = 0
+for x in arr:
+  total += x
+
+print(total)
+```
+
+```python
+arr = [10, 20, 30, 40]
+total = 0
+for i in range(len(arr)):
+  total += arr[i]
+
+print(total)
+```
 
 ---
 
