@@ -19,6 +19,23 @@ arr = [12, 45, 7, 89, 34, 67]
 # 89
 ```
 
+```python
+largest_num = arr[0]
+for num in arr:
+  if num > largest_num:
+    largest_num = num
+
+print(largest_num)
+```
+
+```python
+largest_num = arr[0]
+for i in range(1,len(array)):
+  if arr[i] > largest_num:
+    largest_num = arr[i]
+
+print(largest_num)
+
 ---
 
 ## 2. Find the Minimum Element
