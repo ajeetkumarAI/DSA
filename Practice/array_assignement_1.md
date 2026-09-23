@@ -348,6 +348,23 @@ arr = [10, 40, 20, 50, 30]
 
 Do not use sorting.
 
+```python
+arr = [10, 40, 20, 50, 30]
+largest_num = float('-inf')
+second_largest_num = float('-inf')
+for num in arr:
+  if num > largest_num:
+    second_largest_num = largest
+    largest_num = num
+  elif num > second_largest and num != largest_num:
+    second_largest_num = num
+
+if second_largest == float('-inf'):
+    print("No second largest element found")
+else:
+    print("Second Largest Number:", second_largest)
+```
+
 ---
 
 ## 12. Find the Second Smallest Element
