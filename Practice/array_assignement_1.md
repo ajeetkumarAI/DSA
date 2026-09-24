@@ -516,7 +516,6 @@ arr = [1, 1, 2, 2, 3, 3, 4]
 # Output:
 # 4
 ```
-
 ### Expected Result
 
 After the operation:
@@ -526,6 +525,53 @@ Unique elements = 4
 
 First 4 positions:
 [1, 2, 3, 4]
+```
+```python
+### Logic / Algorithm
+
+1. Start with `position = 1` because the first element is already unique.
+2. Start checking the array from index `1`.
+3. Compare the current element with the previous element.
+4. If both are same → duplicate → skip it.
+5. If they are different → new unique element found.
+6. Put this unique element at `arr[position]`.
+7. Increase `position` by `1`.
+8. Continue until the end of the array.
+9. `position` will be the total number of unique elements.
+10. The first `position` elements of the array contain the unique values.
+
+### Example
+
+```text
+arr = [1, 1, 2, 2, 3, 3, 4]
+
+1 → first unique
+1 → duplicate → skip
+2 → new → put at position 1
+2 → duplicate → skip
+3 → new → put at position 2
+3 → duplicate → skip
+4 → new → put at position 3
+
+Result:
+[1, 2, 3, 4, ...]
+
+Unique count = 4
+```
+
+```python
+arr = [1, 1, 2, 2, 3, 3, 4]
+
+position = 1
+
+for i in range(1, len(arr)):
+
+    if arr[i] != arr[i - 1]:
+        arr[position] = arr[i]
+        position += 1
+
+print(arr)
+print(position)
 ```
 
 ### Requirements
