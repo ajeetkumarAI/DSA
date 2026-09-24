@@ -1,4 +1,4 @@
-# Array Hands-On Practice Problems
++# Array Hands-On Practice Problems
 
 ## General Rule
 
@@ -417,6 +417,29 @@ arr = [0, 1, 0, 3, 12]
 - Modify the original array.
 - Do not create another array.
 - Preserve the relative order of non-zero elements.
+
+```python
+arr = [0, 1, 0, 3, 12]
+
+position = 0
+
+for i in range(len(arr)):
+
+    if arr[i] != 0:   # 1!=0, 3!=0, 12!=0
+
+        arr[position], arr[i] = arr[i], arr[position]
+        # 0,1 = 1,0   → [1,0,0,3,12]
+        # 0,3 = 3,0   → [1,3,0,0,12]
+        # 0,12 = 12,0 → [1,3,12,0,0]
+
+        position += 1  # 1, 2, 3
+
+print(arr)
+
+# Final output:
+# [1,3,12,0,0]
+```
+
 
 ---
 
