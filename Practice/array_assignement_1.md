@@ -462,6 +462,43 @@ arr = [10, -2, 5, -7, 8, -1]
 - Do not create another array.
 - Any valid arrangement is acceptable as long as all negative numbers appear before non-negative numbers.
 
+```python
+arr = [10, -2, 5, -7, 8, -1]
+
+start = 0
+end = len(arr) - 1
+
+while start < end:
+
+    if arr[start] < 0:
+        # arr[start] is already negative
+        # Move start forward
+        start += 1
+
+    elif arr[end] >= 0:
+        # arr[end] is already non-negative
+        # Move end backward
+        end -= 1
+
+    else:
+        # arr[start] is non-negative
+        # arr[end] is negative
+        # Swap them
+
+        arr[start], arr[end] = arr[end], arr[start]
+
+        # 10, -2, 5, -7, 8, -1
+        # ↑                    ↑
+        # start                end
+        #
+        # -1, -2, 5, -7, 8, 10
+
+        start += 1
+        end -= 1
+
+print(arr)
+```
+
 ---
 
 ## 15. Remove Duplicates from a Sorted Array In-Place
