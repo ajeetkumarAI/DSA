@@ -78,6 +78,47 @@ Find the **second largest distinct element** without sorting.
 Input:  [10, 5, 20, 8, 20, 15]
 Output: 15
 ```
+```python
+1. Accept the array.
+
+2. Compare the first two elements.
+
+3. Consider the larger of the first two elements as the largest element.
+
+4. Consider the smaller of the first two elements as the second largest element.
+
+5. Start traversing the array from the third element.
+
+6. For each element:
+   a. If the current element is greater than the largest element:
+      - Assign the current largest element to second largest.
+      - Assign the current element to largest.
+
+   b. Otherwise, check if the current element is:
+      - greater than the second largest element
+      - AND not equal to the largest element
+
+      If both conditions are true:
+      - Update the second largest element.
+
+7. Continue until the end of the array.
+
+8. Print the second largest element.
+```
+
+```python
+arr = [10, 5, 20, 8, 20, 15]
+largest_num = arr[0]
+second_largest_num = arr[0]
+for i in range(len(arr)):
+    if arr[i] > largest_num:
+        second_largest_num = largest_num
+        larget_num = arr[i]
+    elif arr[i] > second_largest_num and arr[i] != largest_num:
+        second_largest_num = arr[i]
+print("Largest:", largest_num)
+print("Second Largest:", second_largest_num)
+```
 
 **Follow-up:** What if there is no second-largest distinct element?
 
