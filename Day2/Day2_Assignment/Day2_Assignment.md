@@ -26,6 +26,55 @@ Output: Maximum = 80, Minimum = 5
 
 **Requirement:** Solve in one traversal.
 
+```python
+Algorithm:
+
+1. Take the first element as the maximum.
+2. Take the first element as the minimum.
+3. Traverse the array from beginning to end.
+4. Compare each element with the current maximum.
+5. If the element is greater, update maximum.
+6. Compare each element with the current minimum.
+7. If the element is smaller, update minimum.
+8. Continue until the end of the array.
+9. Print maximum and minimum.
+```
+
+```python
+For every element:
+    Check whether it is greater than maximum
+        If yes → update maximum
+
+    Check whether it is smaller than minimum
+        If yes → update minimum
+```
+
+```python
+For every element:
+    Check whether it is greater than maximum
+        If yes → update maximum
+
+    Check whether it is smaller than minimum
+        If yes → update minimum
+```
+
+```python
+arr = [20, 5, 40, 10, 80, 15]
+
+max_num = arr[0]
+min_num = arr[0]
+
+for i in range(len(arr)):
+    if arr[i] > max_num:
+        max_num = arr[i]
+
+    if arr[i] < min_num:
+        min_num = arr[i]
+
+print("Max ele of Array", max_num)
+print("Min ele of Array", min_num)
+```
+
 ---
 
 ## 2. Find the Second Largest Element
