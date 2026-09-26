@@ -50,15 +50,6 @@ For every element:
 ```
 
 ```python
-For every element:
-    Check whether it is greater than maximum
-        If yes → update maximum
-
-    Check whether it is smaller than minimum
-        If yes → update minimum
-```
-
-```python
 arr = [20, 5, 40, 10, 80, 15]
 
 max_num = arr[0]
